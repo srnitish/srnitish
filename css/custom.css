@@ -138,6 +138,7 @@ section.hero {
 .pattern-bottom{
 	transform: skewY(-5deg);
 }
+.card{height: -webkit-fill-available}
 section {
     /*padding: 60px 0;*/
     padding: 40px 0;
