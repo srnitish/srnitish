@@ -144,14 +144,15 @@ section.hero {
 }
 section {
     /*padding: 60px 0;*/
-    padding: 40px 0;
+    /*padding: 40px 0;*/
+    padding: 25px 0;
 }
-.pattern{
-	background: #1c92d2;  /* fallback for old browsers */
-	background: linear-gradient(to left, #1c92d2, #f2fcfe); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-background: -webkit-linear-gradient(to left, #1c92d2, #f2fcfe);  /* Chrome 10-25, Safari 5.1-6 */
+/*.pattern{
+	background: #1c92d2; 
+	background: linear-gradient(to left, #1c92d2, #f2fcfe); 
+background: -webkit-linear-gradient(to left, #1c92d2, #f2fcfe);  
 height: 700px;
-}
+}*/
 .grey-section{
     background-color: #eee;
 }
