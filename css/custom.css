@@ -139,7 +139,8 @@ section.hero {
 	transform: skewY(-5deg);
 }
 section {
-    padding: 60px 0;
+    /*padding: 60px 0;*/
+    padding: 40px 0;
 }
 .pattern{
 	background: #1c92d2;  /* fallback for old browsers */
@@ -177,7 +178,7 @@ section .section-title {
 #footer {
     background: #414141 !important;
 }
-.copyright{font-size: 16px;margin-top: 24px;}
+.copyright{font-size: 16px;margin-top: 20px;}
 .col_white_amrc { color:#FFF;}
 footer { width:100%; background-color:#263238; /*min-height:250px;*/ padding:10px 0px 25px 0px ;}
 .pt2 { padding-top:40px ; margin-bottom:20px ;}
