@@ -139,6 +139,9 @@ section.hero {
 	transform: skewY(-5deg);
 }
 .card{height: -webkit-fill-available}
+.card-title {
+    text-decoration: underline;
+}
 section {
     /*padding: 60px 0;*/
     padding: 40px 0;
