@@ -239,7 +239,7 @@ section.hero {
 .pattern-bottom{
 	transform: skewY(-5deg);
 }*/
-.card{height: -webkit-fill-available}
+.card{height: 100%}
 .card-title {
     text-decoration: underline;
 }
@@ -254,8 +254,11 @@ section {
 background: -webkit-linear-gradient(to left, #1c92d2, #f2fcfe);  
 height: 700px;
 }*/
-.benefit-section{
+.bg-benefit{
     background-color: #01548a;
+}
+.bg-modules{
+    background-color: #3dbec4;
 }
 .mt-6, .my-6 {
     margin-top: 5rem!important;
