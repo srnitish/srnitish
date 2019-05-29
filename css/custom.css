@@ -260,6 +260,9 @@ height: 700px;
 .mt-6, .my-6 {
     margin-top: 5rem!important;
 }
+.mgrn-custom{
+        margin-top: 13%;
+}
 
 ul.w3l-right-book li {
     margin-bottom: 10px;
