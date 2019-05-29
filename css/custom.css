@@ -234,7 +234,7 @@ section.hero {
 	background-color: #C0C0C0;
 }
 /*.pattern-top{
-	transform: skewY(5deg);
+	transform: skewY(4deg);
 }
 .pattern-bottom{
 	transform: skewY(-5deg);
@@ -257,8 +257,12 @@ height: 700px;
 .bg-benefit{
     background-color: #01548a;
 }
-.bg-modules{
-    background-color: #3dbec4;
+.bg-contact{
+    background-color: #009fdf;
+    line-height: 2;
+    font-size: 1.9em;
+    margin: 0 auto 1em;
+    font-weight: 600;
 }
 .mt-6, .my-6 {
     margin-top: 5rem!important;
@@ -266,6 +270,7 @@ height: 700px;
 .mgrn-custom{
         margin-top: 9%;
         line-height: 49px;
+        font-weight: 500;
 }
 .cust-card-body{
     line-height: 17px;
