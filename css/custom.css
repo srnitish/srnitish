@@ -254,8 +254,8 @@ section {
 background: -webkit-linear-gradient(to left, #1c92d2, #f2fcfe);  
 height: 700px;
 }*/
-.grey-section{
-    background-color: #eee;
+.benefit-section{
+    background-color: #01548a;
 }
 .mt-6, .my-6 {
     margin-top: 5rem!important;
@@ -264,7 +264,9 @@ height: 700px;
         margin-top: 9%;
         line-height: 49px;
 }
-
+.cust-card-body{
+    line-height: 17px;
+}
 ul.w3l-right-book li {
     margin-bottom: 10px;
     color: #fff;;
