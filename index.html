@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html id="top" lang="en">
    <head>
-      <title>Viki</title>
+      <title>VIKI-Voice AI Companion For Seniors</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -436,36 +436,39 @@
                   <p class="mt-4 footer-text">Looking for more information on VIKI or want to try VIKI for someone you care? Submit your information and our representative will contact you as soon as possible.</p>
                </div>
                <div class="col-lg-5 mt-4 ml-auto">
-                  <form>
-                    <label>
+                  <form action="send_mail.php" method="post">
+                    <label for="first_name">
                       <p class="label-txt">ENTER YOUR FIRST NAME</p>
-                      <input type="text" class="input">
+                      <input type="text" id="first_name" name="first_name" class="input">
                       <div class="line-box">
                         <div class="line"></div>
                       </div>
                     </label>
-                    <label>
+
+                    <label for="last_name">
                       <p class="label-txt">ENTER YOUR LAST NAME</p>
-                      <input type="text" class="input">
+                      <input type="text" id="last_name" name="last_name" class="input">
                       <div class="line-box">
                         <div class="line"></div>
                       </div>
                     </label>
-                    <label>
+
+                    <label for="email">
                       <p class="label-txt">ENTER YOUR EMAIL</p>
-                      <input type="email" class="input">
+                      <input type="email" id="email" name="email" class="input">
                       <div class="line-box">
                         <div class="line"></div>
                       </div>
                     </label>
-                    <label>
+
+                    <label for="message">
                       <p class="label-txt">WRITE YOUR MESSAGE</p>
-                      <textarea class="input" rows="2" cols="50"></textarea>
+                      <textarea class="input" id="message" name="message" rows="2" cols="50"></textarea>
                       <div class="line-box">
                         <div class="line"></div>
                       </div>
                     </label>
-                    <button type="submit">Submit</button>
+                    <button type="submit" name="submit">Submit</button>
                   </form>
                </div>
             </div>
@@ -476,7 +479,7 @@
 
 
       <!--footer starts from here-->
-      <footer class="footer">
+      <footer class="footer texture">
          <!-- <div class="container bottom_border">
             <div class="row">
             <div class=" col-sm-4 col-md col-sm-4  col-12 col">
@@ -552,8 +555,6 @@
  -->
                   <!-- <a href='#top'><span class="scroll-top"><i class="fa fa-angle-up"></i></span></a> -->
                <!-- </div> -->
-
-
                <div class="col-sm-6 ">
                      <div class="copyright-text">
                         <p>IP, Copyright 2019 Owned By AiRo Digital Labs LLC</p>
