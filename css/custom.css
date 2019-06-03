@@ -37,6 +37,14 @@ header .container{
   font-weight:bold;
   margin: 0 0 0 -15%;
 }
+/*.logo:after{
+    content:"";
+    display:block;
+    background-image: url('../images/logo_sample.jpg');
+}*/
+/*.custom{
+    background-image: url('images/logo_sample.jpg');
+}*/
 .logo a{
   color:#000;
   text-decoration:none;
@@ -80,6 +88,7 @@ background:url(../images/viki-hero-image31.jpg) no-repeat center center;
   content:"";
   display:block;
   /*background:rgba(0,0,0,0.5);*/
+  /*background-image: url('../images/logo_sample.jpg');*/
   left:0;
   top:0;
   height:100%;

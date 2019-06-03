@@ -22,7 +22,7 @@
 
   <header class="header">
   <div class="container">
-    <div class="logo"><a href="#"><img src="images/viki_logo.png" alt="viki_logo" style="width:22%;height: auto;"></a></div>
+    <div class="logo"><a href="#"><img src="images/logo_white.png" alt="viki_logo" style="width:22%;height: auto;"></a></div>
    <!--  <nav>
       <ul>
         <li><a href="#">About</a></li>
@@ -160,7 +160,7 @@
             </div>
          </div>
       </section> -->
-  <section>
+  <section class="texture">
     <div class="container">
       <div class="row text-center mt-5 mb-0">
         <div class="col"><strong>Long- Term Care Facilities</strong></div>
@@ -602,6 +602,18 @@
   } else {
     $(".header").removeClass("in-view");
   }
+});
+  </script>
+  <script type="text/javascript">
+    $(function () { 
+    $(window).scroll(function () {
+        if ($(this).scrollTop() < 20000) { 
+            $('.logo img').attr('src','images/viki_logo_white.png');
+        }
+        if ($(this).scrollTop() == 0) { 
+            $('.logo img').attr('src','images/logo_white.png');
+        }
+    })
 });
   </script>
 </body>
