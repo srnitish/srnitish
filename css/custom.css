@@ -37,6 +37,12 @@ header .container{
   font-weight:bold;
   margin: 0 0 0 -15%;
 }
+.viki_logo{
+    width:35%;height: auto;margin: 0 0 0 9%;
+}
+.airo_logo{
+    width:20%;height: auto;margin: 4% 0 0 3%; float: right
+}
 /*.logo:after{
     content:"";
     display:block;
