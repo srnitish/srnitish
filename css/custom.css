@@ -648,6 +648,10 @@ img {
     font-size: 2em;
     width: 100%;
 }
+.footer-text {
+    line-height: 50px;
+    font-size: 2em;
+}
 .copyright-text{width: max-content;}
 }
 
