@@ -618,15 +618,15 @@ button:hover {
     /* right: -12%; */
     width: 50%;
     bottom: 15%;
-    left: 45%;
+    left: 49%;
     z-index: 10;
     color: #fff;
     text-align: center;
     color: gray;
 }
-.head, .cust-head, .sub-head{color: gray; font-size: 3em;}
-.sub-head{line-height: 45px; font-size: 34px; word-break: break-word;}
-.header-button{    margin: 16% 59% 25px 0%; position: inherit;}
+.head, .cust-head, .sub-head{text-shadow: 3px 4px 11px #000; margin: 13px 0 0 3px; font-size: 3em;}
+.sub-head{line-height: 45px; font-size: 2.1em; word-break: break-word; text-shadow: 3px 4px 11px #000;}
+.header-button{    margin: 16% 79% 25px 0%; position: inherit;}
 .img-fluid-cust{ 
     width: auto!important;   
     width: 160%!important;
