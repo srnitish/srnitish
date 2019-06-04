@@ -627,6 +627,19 @@ button:hover {
 .head, .cust-head, .sub-head{color: gray; font-size: 3em;}
 .sub-head{line-height: 45px; font-size: 34px; word-break: break-word;}
 .header-button{    margin: 16% 59% 25px 0%; position: inherit;}
+.img-fluid-cust{ 
+    width: auto!important;   
+    width: 160%!important;
+    height: auto!important;
+    float: right!important;
+    margin: 0 -31% 0 0%!important}
+img {
+    max-width: fit-content;
+}
+.img-fluid {
+    max-width: fit-content;
+    height: auto;
+}
 
 @media only screen and (min-width:240px) and (max-width:639px) {
 
