@@ -617,15 +617,18 @@ button:hover {
     position: absolute;
     /* right: -12%; */
     width: 50%;
-    bottom: 31%;
+    bottom: 4%;
     left: 45%;
     z-index: 10;
     color: #fff;
     text-align: center;
     color: gray;
 }
-.head, .cust-head{color: gray;}
-}
+.head, .cust-head, .sub-head{color: gray; font-size: 3em;}
+
+.sub-head{line-height: 20px; line-height: 58px; font-size: 45px;}
+.header-button{    margin: 34% 59% 25px 0%;
+    position: inherit;}
 
 @media only screen and (min-width:240px) and (max-width:639px) {
 
