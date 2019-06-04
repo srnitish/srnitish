@@ -79,7 +79,7 @@ section{
   padding:150px 0;
 }
 .hero-banner{
-background:url(../images/viki-hero-image31.jpg) no-repeat center center;
+background:url(../images/viki-hero-image31.jpg) no-repeat center 0px;
   background-size: cover;
   height:100vh;
   display:flex;
