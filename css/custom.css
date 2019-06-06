@@ -236,7 +236,7 @@ header.in-view{
 .underline{
     border-bottom: 1px solid #e67817;
     line-height: 63px;
-    width: fit-content;
+    width: max-content;
     margin: 0 auto;
 }
 .texture{
@@ -262,6 +262,7 @@ header.in-view{
     color: #fff;
     text-align: center;
     color: #fff;
+    text-align: initial;
 }
 .navbar-dark .navbar-brand {
     color: #414141!important;
