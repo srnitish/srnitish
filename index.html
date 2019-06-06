@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
   <title>VIKI-Voice AI Companion For Seniors</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <link rel="stylesheet" type="text/css" href="css/reboot.css">
   <meta name="google-site-verification" content="jX6thsDUjM4lr-SO76mShUWe8jz1-LtCVFXgyxh4OXk" />
 </head>
 
@@ -53,7 +56,8 @@
           <p class="cust-head">Companion for the Elderly</p>
           <p class="sub-head">To enhance the Physical and Emotional<br> Well-being of the seniors in your care</p>
           <a href="#video">
-            <button type="button" class="btn btn-lg btn-primary ml-auto header-button">See the video</button>
+            <!-- <button type="button" class="btn btn-lg btn-primary ml-auto header-button">See the video</button> -->
+            <button type="button" name="submit" class="header-button ml-auto btn-lg">See the video</button>
           </a>
         </div>
     </div>
@@ -145,7 +149,7 @@
             </div>
          </section> -->
   <section id="video" class="texture">
-    <div class="container mt-5 mb-4">
+    <div class="container mt-4 mb-4">
       <div class="row">
         <div class="col-md-9 mx-auto">
           <iframe id="myFrame" src="https://www.youtube.com/embed/5BzuuQrsMxs?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -174,14 +178,19 @@
       </section> -->
   <section class="texture">
     <div class="container">
-      <div class="row text-center mt-5 mb-0">
+      <div class="row text-center mb-0">
         <div class="col"><strong>Long- Term Care Facilities</strong></div>
         <div class="col"><strong>Short- Term Care Facilities</strong></div>
         <div class="col"><strong>Assisted Living Facilities</strong></div>
       </div>
       <div class="row">
         <div class="col-lg-12 mx-auto">
-          <img src="images/viki-banner.png" class="img-fluid img-fluid-cust">
+          <picture>
+            <source srcset="images/viki-banner.webp" type="image/webp">
+            <source srcset="images/viki-banner.png" type="image/png">
+            <img src="images/viki-banner.webp" class="img-fluid img-fluid-cust" alt="">
+          </picture>
+          <!-- <img src="images/viki-banner.png" class="img-fluid img-fluid-cust"> -->
         </div>
         <!-- <div class="col-lg-4 mx-auto">
           <div class="mt-5 mgrn-custom">
@@ -195,7 +204,7 @@
           </div>
         </div> -->
       </div>
-      <div class="row text-center">
+      <div class="row text-center mb-4 mt-3">
             <div class="col"><strong>Adult Day Care Facilities</strong></div>
           <div class="col"><strong>Home- based Senior Care</strong></div>
           <div class="col"><strong>Senior care facilities of Large Hospital Chains</strong></div>
@@ -204,12 +213,12 @@
   </section>
   <!-- Viki Slider -->
   <!-- Benefits -->
-  <section class="bg-benefit mt-5 pb-5 pt-5 text-white shadow texture">
+  <section class="bg-benefit pb-5 pt-5 text-white shadow texture">
     <div class="container-fluid">
-      <div class="col-md-12 text-center mb-5">
+      <div class="col-md-12 text-center">
         <h2 class="underline ls-1"><strong>Benefits</strong></h2>
       </div>
-      <div class="row mt-6 mb-5">
+      <div class="row mt-5">
         <div class="col-lg-4 col-md-6 col-sm-6 service-grid-wthree text-center">
           <div class="ser-Agriculture-grid">
             <div class="about-icon mb-md-4 mb-3"> <i class="fa fa-area-chart" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" style="font-size:63px"></i>
@@ -346,7 +355,13 @@
       </div>
       <div class="row module-style shadow">
         <div class="col-lg-6">
-          <img src="images/Lifestyle Module.jpg" class="img-grid rounded img-thumbnail" alt="">
+          <picture>
+            <source type='image/webp' srcset="images/Lifestyle Module.webp" />
+            <source type='image/jpg'  srcset="images/Lifestyle Module.jpg" />
+            <img src="images/Lifestyle Module.webp" class="img-grid rounded img-thumbnail" alt="" />
+          </picture>
+          <!-- <img src="images/Lifestyle Module.jpg" class="img-grid rounded img-thumbnail" alt=""> -->
+          <!-- <img src="images/Lifestyle Module.jpg" class="img-grid rounded img-thumbnail" alt=""> -->
         </div>
         <div class="col-lg-6 ml-auto mt-2 text-dark">
           <h3 class="mb-4 ls-1"><strong>Lifestyle Modules</strong></h3>
@@ -360,7 +375,7 @@
         </div>
       </div>
       <div class="row mt-5 module-style shadow">
-        <div class="col-lg-6 mr-auto mt-2 order-sm-2  text-dark">
+        <div class="col-lg-6 mr-auto mt-2 text-dark">
           <h3 class="mb-4 ls-1"><strong>Care Module</strong></h3>
           <h4 class="mb-3 ls-1">Patient</h4>
           <p>Reminders for medication and appointments</p>
@@ -372,12 +387,22 @@
           <p>Automatic patient health report downloads</p>
         </div>
         <div class="col-lg-6 mr-auto order-lg-2">
-          <img src="images/Care Module.jpg" class="img-grid rounded img-thumbnail" alt="">
+          <picture>
+            <source srcset="images/Care Module.webp" type="image/webp">
+            <source srcset="images/Care Module.jpg" type="image/jpg">
+            <img src="images/Care Module.webp" class="img-grid rounded img-thumbnail" alt="">
+          </picture>
         </div>
       </div>
+
       <div class="row mt-5 mb-5 module-style shadow">
         <div class="col-lg-6">
-          <img src="images/Emergency module.jpg" class="img-grid rounded img-thumbnail" alt="">
+          <picture>
+            <source srcset="images/Emergency module.webp" type="image/webp">
+            <source srcset="images/Emergency module.jpg" type="image/jpg">
+            <img src="images/Emergency module.webp" class="img-grid rounded img-thumbnail" alt="">
+          </picture>
+          <!-- <img src="images/Emergency module.jpg" class="img-grid rounded img-thumbnail" alt=""> -->
         </div>
         <div class="col-lg-6 ml-auto mt-2 text-dark">
           <h3 class="mb-4 ls-1"><strong>Emergency Module</strong></h3>
@@ -439,7 +464,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 mt-6 text-white">
-          <h1>Get in touch with us!</h1>
+          <h3>Get in touch with us!</h3>
           <p class="mt-4 footer-text">Looking for more information on VIKI or want to try VIKI for someone you care? Submit your information and our representative will contact you as soon as possible.</p>
         </div>
         <div class="col-lg-5 mt-4 ml-auto">
@@ -478,6 +503,7 @@
       </div>
     </div>
   </section>
+
   <!--footer starts from here-->
   <footer class="footer texture">
     <!-- <div class="container bottom_border">
@@ -547,7 +573,7 @@
                <li><a href="http://webenlance.com">Contact</a></li>
                </ul> -->
       <!--foote_bottom_ul_amrc ends here-->
-      <div class="row text-white mt-3">
+      <div class="row text-white">
         <!-- <div class="text-white"> -->
         <!--  <div class="col-md-4">VIKI -Voice AI Companion For Seniors</div>
                   <div class="col-md-4">IP, Copyright 2019 Owned By AiRo Digital Labs LLC</div>
@@ -596,39 +622,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script type="text/javascript">
-    AOS.init();
-  </script>
-  <script type="text/javascript">
-    $(window).scroll(function() {
-  var header = $(document).scrollTop();
-  var headerHeight = $(".header").outerHeight();
-  var firstSection = $(".main-container section:nth-of-type(1)").outerHeight();
-  if (header > headerHeight) {
-    $(".header").addClass("fixed");
-  } else {
-    $(".header").removeClass("fixed");
-  }
-  if (header > firstSection) {
-    $(".header").addClass("in-view");
-  } else {
-    $(".header").removeClass("in-view");
-  }
-});
-  </script>
-  <script type="text/javascript">
-    $(function () { 
-    $(window).scroll(function () {
-        if ($(this).scrollTop() < 20000) { 
-            $('.logo img').attr('src','images/viki_logo_white.png');
-            $('.logo2 img').attr('src','images/airologo.png');
-        }
-        if ($(this).scrollTop() == 0) { 
-            $('.logo img').attr('src','images/logo_white.png');
-            $('.logo2 img').attr('src','images/airologo.png');
-        }
-    })
-});
-  </script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>
