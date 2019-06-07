@@ -113,6 +113,25 @@ background:url(../images/viki-hero-image.jpg) no-repeat center 0px;
     /* position: absolute; */
     /* width: 100%; */
 }
+#menu {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    width: 14em;
+    margin-top: -17.2em;
+    background-color: #FF8C00;
+    opacity: 0.8;
+    color: #fff;
+    border-radius: 10px 0px 0px 10px;
+    padding: 6px 10px 3px 5px;
+    border: 1px dotted #fff;
+    z-index: 99999;
+    font-size: 16px;
+    line-height: 37px;
+}
+.center{
+            margin: -12px 0 0 0;
+}
 .hero-banner h2{
   color:#fff;
   position:relative;
