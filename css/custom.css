@@ -46,6 +46,7 @@ header .container{
     width:30%;height: auto;
     margin: -9px 0 0 9%;
 }
+.copyright-text{float: right;}
 .airo_logo{
     width: 20%;
     height: auto;
