@@ -33,7 +33,7 @@
 
       <div class="col-lg-6 align-items-end" style="border:0px solid red">
         <div class="logo2 float-left ml-auto"><a href="https://www.airodigitallabs.com" target="_blank">
-          <img src="images/airologo.png" alt="airo_logo" class="airo_logo"></a></div>
+          <img src="images/airo_logo_white.png" alt="airo_logo" class="airo_logo"></a></div>
       </div>
     </div>
     <!-- <div class="logo"><a href="#"><img src="images/logo_white.png" alt="viki_logo" style="width:22%;height: auto;margin: 0 0 0 3%;"></a></div> -->
@@ -663,6 +663,40 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/script.min.js"></script>
+  <!-- <script src="js/script.min.js"></script> -->
+    <script type="text/javascript">
+    AOS.init();
+  </script>
+  <script type="text/javascript">
+    $(window).scroll(function() {
+  var header = $(document).scrollTop();
+  var headerHeight = $(".header").outerHeight();
+  var firstSection = $(".main-container section:nth-of-type(1)").outerHeight();
+  if (header > headerHeight) {
+    $(".header").addClass("fixed");
+  } else {
+    $(".header").removeClass("fixed");
+  }
+  if (header > firstSection) {
+    $(".header").addClass("in-view");
+  } else {
+    $(".header").removeClass("in-view");
+  }
+});
+  </script>
+  <script type="text/javascript">
+    $(function () { 
+    $(window).scroll(function () {
+        if ($(this).scrollTop() < 20000) { 
+            $('.logo img').attr('src','images/viki_logo_white.png');
+            $('.logo2 img').attr('src','images/airologo.png');
+        }
+        if ($(this).scrollTop() == 0) { 
+            $('.logo img').attr('src','images/logo_white.png');
+            $('.logo2 img').attr('src','images/airo_logo_white.png');
+        }
+    })
+});
+  </script>
 </body>
 </html>
