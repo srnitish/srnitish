@@ -446,7 +446,9 @@ img { max-width: fit-content; }
 }
 
 
-@media screen and (min-width: 1900px) {
+
+
+/*@media only screen and (min-width: 1900px) {
     .head, .cust-head {
     font-size: 51px;
     width: -webkit-fill-available;
@@ -488,7 +490,7 @@ img { max-width: fit-content; }
     margin: 0 0% 0 110%;
     width: inherit;
 }
-}
+}*/
 /*@media only screen and (min-width:375px) and (max-width:667px) {
         .hero-banner {
     background: url(../images/viki-hero-image.jpg) no-repeat center 0px;
