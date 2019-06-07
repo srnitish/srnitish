@@ -408,14 +408,14 @@ button:hover { background: #FF8C00; color: #ffffff; }
 .header-button { left: 0px; margin-top: 22%; }
 header.fixed { height: 8%; }
 img { max-width: fit-content; }
-.img-fluid { max-width: 141%; margin: 0 0 0 -75px; }
+.img-fluid-cust { max-width: 141%; margin: 0 0 0 -75px; }
 .copyright-text{ width: 312px; margin: -60px 8px 11px 0px; }
 .footer-logo{ max-width: 361px; margin: 0px 0 0 -23px; padding: 32px 0 0 0;}
 .slider-banner{ margin: 0 0 0 -74px; width: 143%;}
 }
 
 @media (min-width: 320px) and (max-width: 320px){
-    
+
 }
 
 @media (min-width:374px) and (max-width:375px) {
@@ -430,7 +430,7 @@ img { max-width: fit-content; }
 .header-button { left: 0px; margin-top: 22%; }
 header.fixed { height: 8%; }
 img { max-width: fit-content; }
-.img-fluid { max-width: 141%; margin: 0 0 0 -75px; }
+.img-fluid-cust { max-width: 141%; margin: 0 0 0 -75px; }
 .copyright-text{ width: 312px; margin: -60px 8px 11px 0px; }
 .footer-logo{ max-width: 361px; margin: 0px 0 0 -23px; padding: 32px 0 0 0;}
 .slider-banner{ margin: 0 0 0 -74px; width: 143%;}
@@ -445,6 +445,50 @@ img { max-width: fit-content; }
 .sub-head{ padding: 30px 0 0 0; line-height: 27px }
 }
 
+
+@media screen and (min-width: 1900px) {
+    .head, .cust-head {
+    font-size: 51px;
+    width: -webkit-fill-available;
+    line-height: 31px;
+}
+.sub-head{    font-size: 34px;
+    line-height: 47px;}
+}
+.carousel-caption {
+    bottom: 48%;
+    left: -3%;
+}
+.header-button {
+    margin-top: 48%;
+    font-size: 26px;
+    left: 19%;
+    -webkit-left: 12px;
+    margin-top: 13%;
+}
+.viki_logo {
+    width: 30%;
+    height: auto;
+    margin: 1px 0 0 15%;
+}
+.airo_logo {
+    width: 29%;
+    margin: 35px -36% 0 9%;
+}
+.slider-banner {
+    height: auto;
+    max-width: 162%!important;
+    width: 162%!important;
+    margin: 0 0 0 -27%;
+}
+.logo-footer {
+    margin: 0 0 0 -216%;
+}
+.copyright-text{
+    margin: 0 0% 0 110%;
+    width: inherit;
+}
+}
 /*@media only screen and (min-width:375px) and (max-width:667px) {
         .hero-banner {
     background: url(../images/viki-hero-image.jpg) no-repeat center 0px;
