@@ -46,7 +46,12 @@ header .container{
     width:30%;height: auto;
     margin: -9px 0 0 9%;
 }
-.copyright-text{float: right;}
+/*.copyright-text{float: right;}*/
+.copyright-text > p > strong{
+  float: right;
+  line-height: 0px;
+  margin: -14px 0 0 0;
+}
 .airo_logo{
     width: 20%;
     height: auto;
@@ -492,7 +497,7 @@ label { display: block;position: relative;margin: 40px 0px; }
 .footer-text{ font-size: 21px;line-height: 33px; }
 button { display: inline-block; padding: 12px 24px; background: rgb(220,220,220); font-weight: bold; color: #000; border: none; outline: none; border-radius: 3px; cursor: pointer; transition: ease .3s; font-family: 'Nanum Gothic', sans-serif }
 button:hover { background: #FF8C00; color: #ffffff; }
-.logo-footer{margin: 0 0 0 -20%;}
+.logo-footer{ margin: 0 0 0 -15%; width: 80%;}
 .slider-font{color: #585b59; font-weight: 800;}
 .slider-banner{height: auto; width: 97%; margin: 0 auto; }
 
