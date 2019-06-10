@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="Cache-control" content="public">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="shortcut icon" href="images/favicon.png">
   <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
@@ -21,23 +22,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
     </button>
   </nav> -->
-  <?php
-  if(isset($_POST['submit'])){
-  $msg = 'First Name: ' .$_POST['first_name'] ."\n"
-      .'Last Name: ' .$_POST['last_name'] ."\n"
-      .'Email: ' .$_POST['email'] ."\n"
-      .'Message: ' .$_POST['message'];
-      if(mail('sr.nitish06@gmail.com', 'VIKI Contact Us Form', $msg)){
-        echo "<script>alert('Thank You for your interest, we will get back to you soon!!');</script>";
-        // header('location: index.php');
-      }
-    } 
-    // else
-    // {
-    //   header('location: index.php');
-    //   exit(0);
-    // }
-?>
+
 
 
   <header class="header">
@@ -97,6 +82,16 @@
   </section>
 </div>
 
+
+<section>
+  <a href="#summit">
+  <div id="menu">
+  <h3 class="text-center">Meet<strong> VIKI</strong></h3> 
+  <center class="center">at</center>
+  <h6 class="text-center"><strong>Collaborative Care Summit</strong>,<br> June 23-25, 2019</h6>
+</div>
+</a>
+</section>
 
 
 
@@ -247,8 +242,8 @@
     </div>
   </section>
   <!-- Viki Slider -->
-
-  <section class="texture">
+  <section id="summit"></section>
+  <section class="texture hidden-md-down">
     <div class="container mb-4">
       <div class="row mx-auto">
         <div class="col-lg-7 ml-auto">
@@ -532,7 +527,7 @@
           </p>
         </div>
         <div class="col-lg-5 mt-4 ml-auto">
-          <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" role="form">
+          <form action="send_mail.php" method="post">
             <label for="first_name">
               <p class="label-txt">ENTER YOUR FIRST NAME</p>
               <input type="text" id="first_name" name="first_name" class="input" required>
