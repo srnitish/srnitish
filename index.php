@@ -248,7 +248,15 @@
     </div>
   </section>
   <!-- Viki Slider -->
-  <section><div id="menu"></div></section>
+  <section>
+  <a href="#summit">
+  <div id="menu">
+  <h3 class="text-center">Meet<strong> VIKI</strong></h3> 
+  <center class="center">at</center>
+  <h6 class="text-center"><strong>Collaborative Care Summit</strong>,<br> June 23-25, 2019</h6>
+</div>
+</a>
+</section>
   <section class="texture">
     <div class="container mb-4">
       <div class="row mx-auto">
