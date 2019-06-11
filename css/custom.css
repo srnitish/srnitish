@@ -1,130 +1,25 @@
 /*custom*/
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-html, body{
-    font-family: 'Nanum Gothic', sans-serif!important;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-}
-img{
-  max-width:100%;
-}
-h2{
-  font-size:2.5em;
-}
-.container{
-  width:90%;
-  margin:auto;
-}
-
-header{
-  color:#fff;
-  position:absolute;
-  display:flex;
-  flex-flow: row wrap;
-  width:100%;
-  top:0;
-  left:0;
-  z-index:9;
-}
-header .container{
-  display:flex;
-  flex-flow: row wrap;
-  align-items:center;
-  padding:0px 0;
-}
-.logo{
-  font-size:20px;
-  text-transform:uppercase;
-  font-weight:bold;
-  margin: 0px 0 0 -15%;
-}
-.viki_logo{
-    width:30%;height: auto;
-    margin: -9px 0 0 9%;
-}
-.copyright-text > p > strong{
-  float: right;
-  line-height: 0px;
-  margin: -14px 0 0 0;
-}
-.airo_logo{
-    width: 20%;
-    height: auto;
-    float: right;
-    right: 20px;
-    bottom: 21px;
-    position: absolute;
-}
-.logo a{
-  color:#000;
-  text-decoration:none;
-}
-nav {
-    justify-content: flex-end;
-    display: flex;
-    flex: 2 auto;
-}
-nav ul{
-  list-style:none;
-  padding:0;
-  margin:0;
-  display:flex;
-  flex-direction: row;
-}
-nav ul li{
-  padding:0.5em;
-}
-nav ul li a{
-  color:#000;
-  text-decoration:none;
-  display:inline-block;
-}
-section{
-  padding:150px 0;
-}
-.hero-banner{
-background:url(../images/viki-hero-image.jpg) no-repeat center 0px;
-  background-size: cover;
-  height:100vh;
-  display:flex;
-  align-items:center;
-  text-align:center;
-  position:relative;
-  z-index:0;
-  background-color: transparent;
-  color: #000;
-}
-.hero-banner:after {
-    content: "";
-    display: block;
-    left: 0;
-    top: 0;
-    height: 100%;
-}
-#menu {
-    position: fixed;
-    right: 0;
-    top: 50%;
-    width: 14em;
-    margin-top: 15.2em;
-    background-color: #FF8C00;
-    opacity: 0.8;
-    color: #fff;
-    border-radius: 10px 0px 0px 10px;
-    padding: 6px 10px 3px 5px;
-    border: 1px dotted #fff;
-    z-index: 99999;
-    font-size: 16px;
-    line-height: 37px;
-}
-.center{
-            margin: -12px 0 0 0;
-}
+*{ margin:0; padding:0; box-sizing:border-box; }
+html, body{ font-family: 'Nanum Gothic', sans-serif!important;overflow-x: hidden;scroll-behavior: smooth;box-sizing: border-box; }
+img{ max-width:100%; }
+h2{ font-size:2.5em; }
+.container{ width:90%; margin:auto; }
+header{ color:#fff; position:absolute; display:flex; flex-flow: row wrap; width:100%; top:0; left:0; z-index:9; }
+header .container{display:flex;flex-flow: row wrap;align-items:center;padding:0px 0;}
+.logo{font-size:20px;text-transform:uppercase;font-weight:bold;margin: 0px 0 0 -15%;}
+.viki_logo{width:30%;height: auto;margin: -9px 0 0 9%;}
+.copyright-text > p > strong{float: right;line-height: 0px;margin: -14px 0 0 0;}
+.airo_logo{width: 20%;height: auto;float: right;right: 20px;bottom: 21px;position: absolute;}
+.logo a{color:#000;text-decoration:none;}
+nav {justify-content: flex-end;display: flex;flex: 2 auto;}
+nav ul{ list-style:none;padding:0;margin:0;display:flex;flex-direction: row; }
+nav ul li{ padding:0.5em; }
+nav ul li a{ color:#000; text-decoration:none; display:inline-block; }
+section{ padding:150px 0; }
+.hero-banner{ background:url(../images/viki-hero-image.jpg) no-repeat center 0px;background-size: cover;height:100vh;display:flex;align-items:center;text-align:center;position:relative;z-index:0;background-color: transparent;color: #000;}
+.hero-banner:after { content: ""; display: block; left: 0; top: 0;height: 100%; }
+#menu { position: fixed;right: 0;top: 50%;width: 14em;margin-top: 12.8em;background-color: #FF8C00;opacity: 0.8;color: #fff;border-radius: 10px 0px 0px 10px;padding: 6px 10px 3px 5px;border: 1px dotted #fff;z-index: 99999;font-size: 16px;line-height: 37px; }
+.center{ margin: -12px 0 0 0; }
 .hero-banner h2{
   color:#fff;
   position:relative;
@@ -699,24 +594,25 @@ img {
 /*@media only screen and (min-width:240px) and (max-width:639px) {  }*/
 @media only screen and (min-width:640px) and (max-width:768px) { 
 .hero-banner { margin: 0 0 0 -79%; }
-.carousel-caption { right: -8%;bottom: 14%;left: 50%;}
-.head, .cust-head, .sub-head{ text-shadow: 3px 4px 11px #000; margin: 13px 0 0 3px; font-size: 3em;}
-.sub-head{ line-height: 45px; font-size: 2.1em; word-break: break-word; text-shadow: 3px 4px 11px #000;}
-.header-button{ margin: 19% 73% 54px 0%; position: inherit; width: max-content;}
-.img-fluid-cust{ width: 125%!important; height: auto!important; float: right!important; margin: 0 -11% 0 0%!important;}
-img { max-width: fit-content; }
-.img-fluid { max-width: fit-content; height: auto; }
-.footer-logo{ width: 748px; margin: -47px 0 0 -5%!important;}
-.copyright-text p { margin-top: -40px;margin-bottom: 42px;color: #343a40;font-size: 2em;width: 100%;}
-.footer-text { line-height: 50px; font-size: 1.5em; }
-.label-txt { font-size: 1.5em; }
-.copyright-text{ font-size: 12px; width: 631px; margin: 0 auto;}
-b, strong { font-weight: bolder; font-size: 1.1em!important; }
-p{ margin-top: 0; margin-bottom: 1rem; font-size: 19px; }
-.copyright-text > p > strong{ width: max-content; margin: 0 auto; }
-.airo_logo { margin: -10% -2% 0 0%; }
-.viki_logo { margin: -3px 0 0 9%; }
-header.fixed { height: 10%; }
+.head-caption {
+    margin-left: 47%;
+    margin-top: 36%;
+}
+#menu{display: none}
+.header-button {
+    margin-top: 5%;
+}
+.logo-footer {
+    margin: 0 0 0 0%;
+    width: 100%;
+}
+.copyright-text > p > strong {
+    margin: -19px 0 0 0;
+}
+header.fixed {
+    height: 9%;
+    }
+
  }
 
 @media only screen and (min-width:769px) and (max-width:991px) {

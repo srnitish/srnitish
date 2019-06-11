@@ -52,7 +52,17 @@
 </script>
 </head>
 <body>
-
+  <?php
+    if(isset($_POST['submit'])){
+    $msg = 'First Name: ' .$_POST['first_name'] ."\n"
+      .'Last Name: ' .$_POST['last_name'] ."\n"
+      .'Email: ' .$_POST['email'] ."\n"
+      .'Message: ' .$_POST['message'];
+      if(mail('presales@airodigitallabs.com', 'VIKI Contact Us Form', $msg)){
+        echo "<script>alert('Thank You for your interest, we will get back to you soon!!');</script>";
+      }
+    } 
+  ?>
 <header class="header">
   <div class="container-fluid">
     <div class="row">
@@ -335,7 +345,7 @@
         </p>
       </div>
       <div class="col-lg-5 mt-4 ml-auto">
-        <form action="send_mail.php" method="post">
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
           <label for="first_name">
             <p class="label-txt">ENTER YOUR FIRST NAME</p>
             <input type="text" id="first_name" name="first_name" class="input" required>
